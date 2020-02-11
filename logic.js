@@ -82,13 +82,18 @@ $("#click-button").on("click", function(){
 
     // Alert if user made it to zero and reset
     if (clickCounter === 0){
-        alert("You made it to zero");
+        alert("Player 1 Wins");
         clickCounter = initialValue;
+        clickCounter2 = initialValue;
     }
 
     // save new value in firebase
     database.ref("/clicks").set({
         clickCount: clickCounter
+    });
+
+    database.ref("/clicks2").set({
+        clickCount2: clickCounter2
     });
 })
 
@@ -101,11 +106,15 @@ $("#click-button2").on("click", function(){
 
     // Alert if user made it to zero and reset
     if (clickCounter2 === 0){
-        alert("You made it to zero");
+        alert("Player 2 Wins");
         clickCounter2 = initialValue2;
     }
 
     // save new value in firebase
+
+    database.ref("/clicks").set({
+        clickCount: clickCounter
+    });
     database.ref("/clicks2").set({
         clickCount2: clickCounter2
     });
