@@ -1,0 +1,46 @@
+body{
+    background-color: rgb(194, 194, 194);
+}
+#count{
+    text-align: center;
+}
+.jumbotron{
+    background-color: rgb(47, 56, 133);
+    color: white;
+    margin-top:15px;
+}
+.progress{
+    height: 30px;
+}
+#progress-bar{
+    margin-bottom: 15px;
+}
+
+#restart{
+    align-items: center;
+    text-align: center;
+    align-content: center;
+    display: block;
+    margin: auto;
+}
+
+#space{
+    margin-top: 15px;
+}
+
+#click-button{
+    margin-bottom:15px;
+}
+
+#click-button, #click-button2{
+    align-items: center;
+    display: block;
+    margin: auto;
+    margin-bottom: 15px;
+
+}
+
+#watchers{
+    font-size: 20pt;
+    font-weight: bold;
+}
